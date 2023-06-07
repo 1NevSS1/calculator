@@ -1,0 +1,112 @@
+/* bg - #5599FF
+    button - #EAE3DB    white
+    2button - #647299   blue
+    3button - #D13F30 red 
+    white - #fdfdfd
+    bg-calc- #252D44
+    1437
+*/
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+
+body {
+    width: auto;
+    height: auto;
+    background-color: #3B4664;
+}
+
+.calc {
+    margin: 0px auto;
+    width: 400px;
+    height: 275px;
+    /*border: 1px solid #000; */
+    border-radius: 15px;
+    background: #252D44;
+    color: #3D414A;
+    font-family: Arial;
+    padding: 18px; 
+    
+    
+}
+
+.calc-screen {
+    margin: 50px auto;
+    width: 400px;
+    height: 60px;
+    background: #181F32;
+    border-radius: 15px;
+    padding: 18px;
+    font-family: Arial;
+    display: grid;
+    justify-items: end;
+    align-items: end; 
+    margin-bottom: 10px;
+}
+
+
+.calc-screen p {
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+    color: #EAE3DB
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "seven eight nine del"
+    "four five six plus"
+    "one two three minus"
+    "dot zero division multi"
+    "res res equal equal";
+    grid-gap: 16px;
+    justify-items: center;
+}
+
+.btn {
+    width: 70px;
+    height: 40px;
+    background: #EAE3DB;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.res {
+    grid-area: res;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn.equal {
+    grid-area: equal;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn:hover {
+    filter: brightness(120%)
+}
+
+.btn:active {
+    filter: brightness(90%)
+}
+
+.btn.bg-blue{
+    background: #647299;
+    color: #EAE3DB;
+}
+
+.btn.bg-red{
+    background: #D13F30;
+    color: #EAE3DB;
+}
+
